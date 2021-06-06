@@ -6,7 +6,7 @@
 
     <!--style and bootstrap links-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_visual.css">
 
 </head>
 
@@ -65,34 +65,33 @@
 <!--Bootstrap Grid----------------------------------------------------------------------->
 <p></p>
 <div class="container-fluid">
-
+    
     <div class="row">
         <div class="col-lg-7 col-md-12 p-4">
-            <h1>Summary: Latitude vs. X</h1>
+            <h1>Humidity</h1>
             <hr>
-            <img src="Resources/assets/images/Fig1.png" id="float_left"; width=275; height=275;>
+            <img src="Resources/assets/images/Fig2.png" width=600; height=412.5>
             
-            <p>By pulling data from OpenWeatherMap API we created a dataset of cities around the world and analyzed the weather patterns as you get closer to the equator.</p>
+            <p>There seems to be no marked change in humidity as we near the equator. Overall it does measure slightly higher in the Northern Hemisphere, but that may be due to the time of year.</p>
             
-            <p>We plotted the data using Matplotlib, focusing on different aspects of weather (temperature, humidity, cloudiness, and wind speed) and how they are impacted by latitude.</p>
-            <p>On this site you'll find our visualizations and a summary of our conclusions.</p>
         </div>
 
         <div class="col-xs-05 panel-transparent p-0" id="nav-select"></div>
         
-        <div class="col-lg-4 col-md-12 p-4">
+        <div class="col-lg-4 col-md-12 p-4 two-div">
             <h1>Visualizations</h1>
             <hr>
             <!--table displays on larger screen-->
             <table id="nav-select">
                 <tr>
-                    <td><a href="max_temp.html"><img src="Resources/assets/images/Fig1.png" id="float_left"; width=175; height=175; alt="max_temperture";></a></td>
-                    <td><a href="humidity.html"><img src="Resources/assets/images/Fig2.png" id="float_left"; width=175; height=175;></a></td>
+                    <td><a href="max_temp.html"><img src="Resources/assets/images/Fig1.png" id="float_left"; width=170; height=170; alt="max_temperture";></a></td>
+                    <td><img src="Resources/assets/images/Fig2.png" class="active_page" id="float_left"; width=170; height=170;></td>
                 </tr>
-
+                
                 <tr>
-                    <td><a href="cloudiness.html"><img src="Resources/assets/images/Fig3.png" id="float_left"; width=175; height=175;></a></td>
-                    <td><a href="windspeed.html"><img src="Resources/assets/images/Fig4.png" id="float_left"; width=175; height=175;></a></td>
+                    <br>
+                    <td><a href="cloudiness.html"><img src="Resources/assets/images/Fig3.png" id="float_left"; width=170; height=170;></a></td>
+                    <td><a href="windspeed.html"><img src="Resources/assets/images/Fig4.png" id="float_left"; width=170; height=170;></a></td>
                 </tr>
 
             </table>
@@ -100,8 +99,8 @@
             <!--table displays on smaller screen-->
             <table id="nav-select-sm">
                 <tr>
-                    <td><a href="max_temp.html"><img src="Resources/assets/images/Fig1.png" id="float_left"; width=165; height=165;></a></td>
-                    <td><a href="humidity.html"><img src="Resources/assets/images/Fig2.png" id="float_left"; width=165; height=165;></a></td>
+                    <td><a href="max_temp.html"><img src="Resources/assets/images/Fig1.png" id="float_left"; width=165; height=165;></td>
+                    <td><img src="Resources/assets/images/Fig2.png" class="active_page" id="float_left"; width=165; height=165;></td>
                     <td><a href="cloudiness.html"><img src="Resources/assets/images/Fig3.png" id="float_left"; width=165; height=165;></a></td>
                     <td><a href="windspeed.html"><img src="Resources/assets/images/Fig4.png" id="float_left"; width=165; height=165;></a></td>
                 </tr>

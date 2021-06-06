@@ -6,7 +6,7 @@
 
     <!--style and bootstrap links-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="data_style.css">
 
 </head>
 
@@ -14,7 +14,7 @@
 
 <!--Bootstrap Navigation Bar-------------------------------------------------------------------------->
 <nav class="navbar navbar-expand-lg navbar-light bg-light" id="bar_color">
-    <div class="container-fluid">
+    <div class="container">
       
        
         <!--home icon-->
@@ -64,54 +64,44 @@
 
 <!--Bootstrap Grid----------------------------------------------------------------------->
 <p></p>
-<div class="container-fluid">
+<div class="container">
 
     <div class="row">
-        <div class="col-lg-7 col-md-12 p-4">
-            <h1>Summary: Latitude vs. X</h1>
+        <div class="col-md-12 p-4">
+            <h1>Comparison: Latitude vs. X</h1>
             <hr>
-            <img src="Resources/assets/images/Fig1.png" id="float_left"; width=275; height=275;>
-            
-            <p>By pulling data from OpenWeatherMap API we created a dataset of cities around the world and analyzed the weather patterns as you get closer to the equator.</p>
-            
-            <p>We plotted the data using Matplotlib, focusing on different aspects of weather (temperature, humidity, cloudiness, and wind speed) and how they are impacted by latitude.</p>
-            <p>On this site you'll find our visualizations and a summary of our conclusions.</p>
+            <p>Click on image for a closer look.</p>  
         </div>
-
-        <div class="col-xs-05 panel-transparent p-0" id="nav-select"></div>
-        
-        <div class="col-lg-4 col-md-12 p-4">
-            <h1>Visualizations</h1>
-            <hr>
-            <!--table displays on larger screen-->
-            <table id="nav-select">
-                <tr>
-                    <td><a href="max_temp.html"><img src="Resources/assets/images/Fig1.png" id="float_left"; width=175; height=175; alt="max_temperture";></a></td>
-                    <td><a href="humidity.html"><img src="Resources/assets/images/Fig2.png" id="float_left"; width=175; height=175;></a></td>
-                </tr>
-
-                <tr>
-                    <td><a href="cloudiness.html"><img src="Resources/assets/images/Fig3.png" id="float_left"; width=175; height=175;></a></td>
-                    <td><a href="windspeed.html"><img src="Resources/assets/images/Fig4.png" id="float_left"; width=175; height=175;></a></td>
-                </tr>
-
-            </table>
-
-            <!--table displays on smaller screen-->
-            <table id="nav-select-sm">
-                <tr>
-                    <td><a href="max_temp.html"><img src="Resources/assets/images/Fig1.png" id="float_left"; width=165; height=165;></a></td>
-                    <td><a href="humidity.html"><img src="Resources/assets/images/Fig2.png" id="float_left"; width=165; height=165;></a></td>
-                    <td><a href="cloudiness.html"><img src="Resources/assets/images/Fig3.png" id="float_left"; width=165; height=165;></a></td>
-                    <td><a href="windspeed.html"><img src="Resources/assets/images/Fig4.png" id="float_left"; width=165; height=165;></a></td>
-                </tr>
-
-            </table>
-
-        </div>
-
     </div>
-       
+    
+    <!--row 1 md-->
+    <div class="row">
+        <div class="col-lg-6 col-md-12 p-0">
+        <center><h2>vs. Max Temperature</h2></center>
+         <center><a href="max_temp.html"><img src="Resources/assets/images/Fig1.png" alt="max_temperature" width=400; height=275;></a></center>
+        </div>   
+        
+        <div class="col-lg-6 col-md-12 p-0">
+          <center><h2>vs. Humidity</h2></center>
+         <center><a href="humidity.html"><img src="Resources/assets/images/Fig2.png" alt="humidity" width=400; height=275;></a></center>
+        </div>
+        
+    </div>
+
+    <!--row 2 md-->
+    <div class="row">
+        <div class="col-lg-6 col-md-12 p-0">
+          <center><h2>vs. Cloudiness</h2></center>
+         <center><a href="cloudiness.html"><img src="Resources/assets/images/Fig3.png" alt="cloudiness" width=400; height=275;></a></center>
+        </div>   
+        
+        <div class="col-lg-6 col-md-12 p-0">
+          <center><h2>vs. Wind Speed</h2></center>
+         <center><a href="windspeed.html"><img src="Resources/assets/images/Fig4.png" alt="windspeed" width=400; height=275;></a></center>
+        </div>
+        
+    </div>
+
 </div>
 
 

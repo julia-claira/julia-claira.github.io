@@ -1,2 +1,1 @@
-# julia-claira.github.io
-a web page
+# Web-Design-Challenge
